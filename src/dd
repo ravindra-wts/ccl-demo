@@ -1,0 +1,124 @@
+return (
+    <group ref={group} {...props} dispose={null}>
+      <group name="Scene">
+        <group name="Empty" position={[-1.6, -0.08, 0]}>
+          <Billboard position={[0, 0, 0]} args={[1000, 1100]}>
+            <mesh>
+              <planeGeometry args={[0.5, 0.5]} />
+              <meshStandardMaterial
+                emissiveMap={icon1}
+                emissiveIntensity={1}
+                alphaMap={icon1}
+                map={icon1}
+                transparent={true}
+              />
+            </mesh>
+          </Billboard>
+        </group>
+        <group name="Empty001" position={[-1.93, -0.08, 0]}>
+          <Billboard position={[0, 0, 0]} args={[1000, 1100]}>
+            <mesh>
+              <planeGeometry args={[0.5, 0.5]} />
+              <meshStandardMaterial map={icon1} transparent={true} />
+            </mesh>
+          </Billboard>
+        </group>
+        <group name="Empty002" position={[-2.33, -0.08, 0]}>
+          <Billboard position={[0, 0, 0]} args={[1000, 1100]}>
+            <mesh>
+              <planeGeometry args={[0.5, 0.5]} />
+              <meshStandardMaterial map={icon1} transparent={true} />
+            </mesh>
+          </Billboard>
+        </group>
+        <group name="Empty004" position={[-2.87, -0.08, 0]}>
+          <Billboard position={[0, 0, 0]} args={[1000, 1100]}>
+            <mesh>
+              <planeGeometry args={[0.5, 0.5]} />
+              <meshStandardMaterial map={icon1} transparent={true} />
+            </mesh>
+          </Billboard>
+        </group>
+        <mesh
+          name="Circle002"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle002.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.06, 0]}
+          scale={1.95}
+        />
+        <mesh
+          name="Circle003"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle003.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.06, 0]}
+          scale={2.36}
+        />
+        <mesh
+          name="Circle004"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle004.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.06, 0]}
+          scale={1.62}
+        />
+        <mesh
+          name="Circle005"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle005.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.06, 0]}
+          rotation={[0, -0.72, 0]}
+          scale={2.91}
+        />
+        <mesh
+          name="Circle006"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle006.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.06, 0]}
+          rotation={[0, 1.06, 0]}
+          scale={3.31}
+        />
+        <mesh
+          name="Circle007"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle007.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.06, 0]}
+          scale={4.32}
+        />
+        <mesh
+          name="Circle008"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle008.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.06, 0]}
+          scale={4.9}
+        />
+        <mesh
+          name="Circle010"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle010.geometry}
+          material={materials["Material.006"]}
+          position={[0, -0.07, 0]}
+          scale={2.61}
+        />
+        <Billboard position={[0, 0, 0]} args={[1000, 1100]}>
+          <mesh>
+            <planeGeometry args={[2, 2]} />
+            <meshBasicMaterial map={texture} transparent={true} />
+          </mesh>
+        </Billboard>
+      </group>
+    </group>
+  );
